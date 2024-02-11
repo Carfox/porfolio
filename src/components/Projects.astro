@@ -1,39 +1,62 @@
 ---
 import GitHub from "./icons/GitHub.astro"
-import NextJS from "./icons/NextJS.astro"
+import Angular from "./icons/Angular.astro"
 import Tailwind from "./icons/Tailwind.astro"
+import Firebase from "./icons/Firebase.astro"
 import Link from "./icons/Link.astro"
+import Flask from "./icons/Flask.astro"
+import Tensorflow from "./icons/Tensorflow.astro"
+import Azure from "./icons/Azure.astro"
 import LinkButton from "./LinkButton.astro"
 
 const TAGS = {
-  NEXT: {
-    name: "Next.js",
-    class: "bg-black text-white",
-    icon: NextJS,
+  ANGULAR: {
+    name: "Angular",
+    class: "bg-gradient-to-r from-[#dd3656] from-10% via-[#d42e68] via-30% to-[#7d20e8] to-90% text-white",
+    icon: Angular,
+  },
+  FLASK: {
+    name: "Flask",
+    class: "bg-[#181818] text-white",
+    icon: Flask,
+  },
+  TENSORFLOW: {
+    name: "TensorFlow",
+    class: "bg-[#a0511f] text-white",
+    icon: Tensorflow,
+  },
+  AZURE: {
+    name: "Azure",
+    class: "bg-[#0f1a24] text-white",
+    icon: Azure,
   },
   TAILWIND: {
-    name: "Tailwind CSS",
+    name: "Tailwind",
     class: "bg-[#003159] text-white",
     icon: Tailwind,
+  },
+  FIREBASE: {
+    name: "Firebase",
+    class: "bg-[#ac6527] text-white",
+    icon: Firebase,
   },
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "CIBIA XIV",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Pagina web para el registro, pago y gestion de asistentes de una conferencia internacional",
+    link: "https://cibia-b13fe.web.app/registro",
+    image: "/projects/cibia2.webp",
+    tags: [TAGS.ANGULAR, TAGS.FIREBASE],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "CARPIA",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Proyecto de Inteligencia Artificial aplicando CNN a un auto que interactúa mediante reconocimiento de gestos de las manos.",
+    github: "https://github.com/carfox/carpia",
+    image: "/projects/carpia3.webp",
+    tags: [TAGS.FLASK, TAGS.TENSORFLOW, TAGS.AZURE],
   },
 ]
 ---
@@ -44,7 +67,7 @@ const PROJECTS = [
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <div class="w-full md:w-1/2">
     <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-      <img alt="Recién llegado vs 5 años en Nueva Zelanda" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+      <img alt="Captura de proyecto" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
     </div>
   </div>
 
